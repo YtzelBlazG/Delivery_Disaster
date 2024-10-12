@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\assets\\01_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\01_Scripts\\AudioManager.cs",
+              "ToolTip": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\01_Scripts\\AudioManager.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T00:11:48.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\01_Scripts\\Player.cs",
+              "ToolTip": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\01_Scripts\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T21:31:43.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
