@@ -19,9 +19,13 @@ public class Player : MonoBehaviour
     public Transform frontView;
     public Transform topView;
 
+    [Header("Fantasma")]
+    public GameObject ghostPrefab;  // Referencia al fantasma
+    public Transform[] ghostPositions; 
+
     private GameObject nearbyPizza = null;
     private GameObject grabbedPizza = null;
-
+    private GameObject ghostInstance = null; // Instancia del fantasma
     private bool invertedControls = false;
     private bool reversedClicks = false;
 
@@ -123,19 +127,25 @@ public class Player : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(5f, 10f));
+            // Espera antes del ataque del fantasma
+            yield return new WaitForSeconds(Random.Range(5f, 10f)); 
+
+            // Instanciar al fantasma cerca del jugador
+            ghostInstance = Instantiate(ghostPrefab, GetRandomGhostPosition(), Quaternion.identity);
 
             // Invertir controles o clicks
             invertedControls = Random.value > 0.5f;
             reversedClicks = Random.value > 0.5f;
 
-            // Cambiar cámara a una vista aleatoria
-            ChangeRandomCameraView();
-
+            // Cambiar cámara a una vista aleatoria & spawn fantasma
             Debug.Log("Ghost Attack");
+            ChangeRandomCameraView();
+            StartCoroutine(MoveGhost());
 
-            // Duración de la intervención del fantasma
+            // Duración de la intervención luego adioh fantasma
             yield return new WaitForSeconds(10f);
+
+            Destroy(ghostInstance);
 
             // Restaurar los controles y vista isométrica
             invertedControls = false;
@@ -145,11 +155,42 @@ public class Player : MonoBehaviour
         }
     }
 
+    // El fantasma se mueve aleatoriamente por el mapa durante el ataque
+    IEnumerator MoveGhost()
+    {
+        while (ghostInstance != null)  // Verifica si el fantasma aún existe
+        {
+            Vector3 targetPosition = GetRandomGhostPosition();
+            float moveDuration = Random.Range(2f, 4f); // Tiempo que tarda en moverse
+            float elapsedTime = 0f;
+
+            Vector3 startPosition = ghostInstance.transform.position;
+
+            while (elapsedTime < moveDuration)
+            {
+                if (ghostInstance == null) yield break; 
+                ghostInstance.transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / moveDuration);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(Random.Range(1f, 3f)); // Chill Moment xD
+        }
+    }
+
+
+    // Posición aleatoria Beetlejuice
+    Vector3 GetRandomGhostPosition()
+    {
+        int randomIndex = Random.Range(0, ghostPositions.Length);
+        return ghostPositions[randomIndex].position;
+    }
+
     void SetCameraView(Transform newView)
     {
         if (newView == firstPersonView)
         {
-            // Hacer que la cámara siga al jugador en primera persona
+            // Hacer que la cámara siga al jugador en primera persona (esto sale erro jaja)
             mainCamera.transform.SetParent(transform);
             mainCamera.transform.localPosition = firstPersonView.localPosition; // Posición Relativa Player
             mainCamera.transform.localRotation = firstPersonView.localRotation;
@@ -162,7 +203,6 @@ public class Player : MonoBehaviour
             mainCamera.transform.rotation = newView.rotation;
         }
     }
-
 
     void ChangeRandomCameraView()
     {
