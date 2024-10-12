@@ -4,21 +4,36 @@ using UnityEngine;
 
 public class PizzaSpawner : MonoBehaviour
 {
-    [Header("Spawn Settings")]
-    public GameObject[] pizzaPrefabs;  
-    public Transform leftPoint;
-    public Transform rightPoint;
-    public float timeBtwSpawn = 5f; 
+    [Header("Pizza Prefabs")]
+    public GameObject[] pizzaPrefabs; // Prefabs de pizzas
 
+    [Header("Spawn Points")]
+    public Transform[] spawnPoints; // Puntos de spawn
+
+    public float timeBtwSpawn = 5f;
+    public float restTime = 10f; 
     private float timer = 0f;
+    private int pizzaCount = 0; 
+    private bool isResting = false; // Para controlar el descanso
 
     void Start()
     {
-        timer = timeBtwSpawn;  
+        timer = timeBtwSpawn;
     }
 
     void Update()
     {
+        if (isResting)
+        {
+            timer += Time.deltaTime;
+            if (timer >= restTime)
+            {
+                isResting = false;
+                timer = 0f; 
+            }
+            return; 
+        }
+
         if (timer < timeBtwSpawn)
         {
             timer += Time.deltaTime;
@@ -32,23 +47,27 @@ public class PizzaSpawner : MonoBehaviour
 
     void SpawnPizza()
     {
-        PizzaType randomPizza = (PizzaType)Random.Range(0, pizzaPrefabs.Length);
+        for (int i = 0; i < pizzaPrefabs.Length; i++)
+        {
+            Vector3 spawnPos = spawnPoints[i].position;
+            Instantiate(pizzaPrefabs[i], spawnPos, Quaternion.identity);
+            pizzaCount++; 
+        }
 
-        float x = Random.Range(leftPoint.position.x, rightPoint.position.x);
-        float z = Random.Range(leftPoint.position.z, rightPoint.position.z);
-        Vector3 spawnPos = new Vector3(x, 0, z);
-
-        Instantiate(pizzaPrefabs[(int)randomPizza], spawnPos, Quaternion.identity);
+        if (pizzaCount >= 10)
+        {
+            isResting = true; 
+            pizzaCount = 0; 
+        }
     }
 
-    public enum PizzaType 
-    { 
-        Pepperoni, 
-        Salame, 
-        Clasica, 
-        Hawaiana, 
-        Napolitana, 
-        Champinones 
+    public enum PizzaType
+    {
+        Pepperoni,
+        Salame,
+        Clasica,
+        Hawaiana,
+        Napolitana,
+        Champinones
     }
-
 }

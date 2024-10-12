@@ -128,7 +128,7 @@ public class Player : MonoBehaviour
         while (true)
         {
             // Espera antes del ataque del fantasma
-            yield return new WaitForSeconds(Random.Range(5f, 10f)); 
+            yield return new WaitForSeconds(Random.Range(10f, 30f)); 
 
             // Instanciar al fantasma cerca del jugador
             ghostInstance = Instantiate(ghostPrefab, GetRandomGhostPosition(), Quaternion.identity);
@@ -158,7 +158,7 @@ public class Player : MonoBehaviour
     // El fantasma se mueve aleatoriamente por el mapa durante el ataque
     IEnumerator MoveGhost()
     {
-        while (ghostInstance != null)  // Verifica si el fantasma aún existe
+        while (ghostInstance != null)  
         {
             Vector3 targetPosition = GetRandomGhostPosition();
             float moveDuration = Random.Range(2f, 4f); // Tiempo que tarda en moverse
@@ -192,12 +192,12 @@ public class Player : MonoBehaviour
         {
             // Hacer que la cámara siga al jugador en primera persona (esto sale erro jaja)
             mainCamera.transform.SetParent(transform);
-            mainCamera.transform.localPosition = firstPersonView.localPosition; // Posición Relativa Player
+            mainCamera.transform.localPosition = firstPersonView.localPosition; 
             mainCamera.transform.localRotation = firstPersonView.localRotation;
         }
         else
         {
-            // Desanidar la cámara del Player cuando no esté en primera persona
+            // Desanidar la cámara del Player si no es primera persona
             mainCamera.transform.SetParent(null);
             mainCamera.transform.position = newView.position;
             mainCamera.transform.rotation = newView.rotation;
