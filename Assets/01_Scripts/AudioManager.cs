@@ -6,14 +6,10 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource musicAS;
     public AudioSource sfxAS;
-
-    public float musicVol = 0.1f;
-    public float sfxVol = 0.2f;
+    public float musicVol = 0.5f;
+    public float sfxVol = 1.0f;
 
     public static AudioManager instance;
-
-    //[Header("Sonidos")]
-    //public AudioClip GhostSoundtrack;
 
     private void Awake()
     {
@@ -30,7 +26,6 @@ public class AudioManager : MonoBehaviour
         musicAS.volume = musicVol;
         musicAS.playOnAwake = true;
         musicAS.loop = true;
-
         sfxAS.volume = sfxVol;
         sfxAS.playOnAwake = false;
         sfxAS.loop = false;
@@ -47,11 +42,4 @@ public class AudioManager : MonoBehaviour
         musicAS.clip = music;
         musicAS.Play();
     }
-
-    //public void GhostSong()
-    //{
-    //    musicAS.Stop();
-    //    musicAS.clip = GhostSoundtrack;
-    //    musicAS.Play();
-    //}
 }

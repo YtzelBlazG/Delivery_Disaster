@@ -29,6 +29,9 @@ public class Player : MonoBehaviour
     private bool invertedControls = false;
     private bool reversedClicks = false;
 
+    [Header("Sonidos")]
+    public AudioClip ghostSound;
+
     void Start()
     {
         // Vista Inicial Isométrica
@@ -128,10 +131,11 @@ public class Player : MonoBehaviour
         while (true)
         {
             // Espera antes del ataque del fantasma
-            yield return new WaitForSeconds(Random.Range(10f, 30f)); 
+            yield return new WaitForSeconds(Random.Range(10f, 30f));
 
             // Instanciar al fantasma cerca del jugador
             ghostInstance = Instantiate(ghostPrefab, GetRandomGhostPosition(), Quaternion.identity);
+            //AudioManager.instance.PlaySound(ghostSound);
 
             // Invertir controles o clicks
             invertedControls = Random.value > 0.5f;

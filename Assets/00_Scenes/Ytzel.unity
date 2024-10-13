@@ -766,6 +766,7 @@ MonoBehaviour:
   - {fileID: 63745748}
   - {fileID: 1990150102}
   - {fileID: 42877177}
+  ghostSound: {fileID: 8300000, guid: fedc9bb93c4b96349ba2c95c8a7b33c2, type: 3}
 --- !u!114 &684636684
 MonoBehaviour:
   m_ObjectHideFlags: 0
