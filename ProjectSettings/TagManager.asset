@@ -19,6 +19,7 @@ TagManager:
   - points2
   - NPC_Point
   - NPC_Point2
+  - Pizza  # Añadido desde la rama 'dev'
   layers:
   - Default
   - TransparentFX
@@ -26,8 +27,6 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
   - 
   - 
   - 
