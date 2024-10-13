@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6086380371388347936}
   - component: {fileID: 2941063797493554023}
   m_Layer: 0
-  m_Name: Pizza
+  m_Name: Peperoni
   m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
