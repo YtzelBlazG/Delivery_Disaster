@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\01_Scripts\Player.cs" />
+    <Compile Include="Assets\01_Scripts\Pizza.cs" />
     <Compile Include="Assets\01_Scripts\RotateAndLookAtMouse.cs" />
     <Compile Include="Assets\01_Scripts\Spawner.cs" />
     <Compile Include="Assets\01_Scripts\AudioManager.cs" />
