@@ -123,11 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
+HEAD
 --- !u!1 &181961338
-=======
+
 --- !u!1 &705507993
->>>>>>> 504136ffcd16016d06efb57b7bdad06b7dc660b7
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,13 +135,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
+HEAD
   - component: {fileID: 181961340}
   - component: {fileID: 181961339}
-=======
+
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
->>>>>>> 504136ffcd16016d06efb57b7bdad06b7dc660b7
+
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -225,11 +225,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-<<<<<<< HEAD
+ HEAD
 --- !u!1 &228122567
-=======
+
 --- !u!1 &963194225
->>>>>>> 504136ffcd16016d06efb57b7bdad06b7dc660b7
+
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,15 +237,15 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
+ HEAD
   - component: {fileID: 228122570}
   - component: {fileID: 228122569}
   - component: {fileID: 228122568}
-=======
+
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
->>>>>>> 504136ffcd16016d06efb57b7bdad06b7dc660b7
+
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
