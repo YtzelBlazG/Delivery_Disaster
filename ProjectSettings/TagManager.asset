@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Kitchen
+  - NPC
+  - Point
+  - Obstacle
+  - PointGreen
+  - YellowPoint
+  - MiddlePoint
+  - Exit
+  - Middle
+  - Point2
+  - point2
+  - Points2
+  - points2
+  - NPC_Point
+  - NPC_Point2
+  - Pizza  # Añadido desde la rama 'dev'
   layers:
   - Default
   - TransparentFX
@@ -11,8 +27,6 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
   - 
   - 
   - 
