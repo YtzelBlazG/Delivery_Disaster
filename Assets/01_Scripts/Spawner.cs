@@ -4,20 +4,53 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject npcPrefab; // Prefab del NPC
-    public float spawnInterval = 2f; // Intervalo de tiempo entre apariciones
-    private float spawnTimer = 0f; // Temporizador interno
+    public GameObject npcPrefab;
+    public float spawnInterval = 2f; 
+    private float spawnTimer = 0f; 
+    public GameObject[] points; 
+
+    void Start()
+    {
+        points = GameObject.FindGameObjectsWithTag("Point"); 
+    }
 
     void Update()
     {
-        // Incrementa el temporizador en función del tiempo transcurrido
         spawnTimer += Time.deltaTime;
 
-        // Si el temporizador supera el intervalo de aparición, genera un NPC
-        if (spawnTimer >= spawnInterval)
+        if (spawnTimer >= spawnInterval && IsThereFreePoint())
         {
-            Instantiate(npcPrefab, transform.position, Quaternion.identity); // Instancia el NPC
-            spawnTimer = 0f; // Reinicia el temporizador
+            GameObject newNpc = Instantiate(npcPrefab, transform.position, Quaternion.identity); 
+            AssignTagToNpc(newNpc); 
+            spawnTimer = 0f; 
+        }
+    }
+
+    bool IsThereFreePoint()
+    {
+        foreach (GameObject point in points)
+        {
+            SpawnPoint pointScript = point.GetComponent<SpawnPoint>();
+            if (!pointScript.IsOccupied())
+            {
+                return true; 
+            }
+        }
+
+        return false; 
+    }
+
+    void AssignTagToNpc(GameObject npc)
+    {
+        foreach (GameObject point in points)
+        {
+            SpawnPoint pointScript = point.GetComponent<SpawnPoint>();
+            if (!pointScript.IsOccupied())
+            {
+                npc.tag = "NPC_Point"; 
+                pointScript.SetOccupied(true); 
+                return; 
+            }
         }
     }
 }
