@@ -21,12 +21,12 @@ public class Player : MonoBehaviour
     public Transform topView;
 
     [Header("Fantasma")]
-    public GameObject ghostPrefab;  // Referencia al fantasma
-    public Transform[] ghostPositions; 
+    public GameObject ghostPrefab;
+    public Transform[] ghostPositions;
 
     private GameObject nearbyPizza = null;
     private GameObject grabbedPizza = null;
-    private GameObject ghostInstance = null; // Instancia del fantasma
+    private GameObject ghostInstance = null;
     private bool invertedControls = false;
     private bool reversedClicks = false;
 
@@ -35,39 +35,37 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        // Vista Inicial Isométrica
         SetCameraView(isometricView);
-
-        // Inicia Ataque Fantasma
         StartCoroutine(GhostIntervention());
     }
 
     void Update()
     {
         MoverPlayer();
+        CheckNearbyPizza();  // Verificar si hay pizza cerca
 
-        if (!reversedClicks && Input.GetMouseButtonDown(0))  // Click Izq agarre
+        if (!reversedClicks && Input.GetMouseButtonDown(0))
         {
             if (grabbedPizza == null && nearbyPizza != null)
             {
                 GrabPizza();
             }
         }
-        else if (!reversedClicks && Input.GetMouseButtonDown(1))  // Click Der soltar
+        else if (!reversedClicks && Input.GetMouseButtonDown(1))
         {
             if (grabbedPizza != null)
             {
                 DropPizza();
             }
         }
-        else if (reversedClicks && Input.GetMouseButtonDown(1))  // Click Der agarre (invertido)
+        else if (reversedClicks && Input.GetMouseButtonDown(1))
         {
             if (grabbedPizza == null && nearbyPizza != null)
             {
                 GrabPizza();
             }
         }
-        else if (reversedClicks && Input.GetMouseButtonDown(0))  // Click Izq soltar (invertido)
+        else if (reversedClicks && Input.GetMouseButtonDown(0))
         {
             if (grabbedPizza != null)
             {
@@ -90,30 +88,47 @@ public class Player : MonoBehaviour
         rb.velocity = Vector3.forward * speed * z + Vector3.right * speed * x;
 
         // Control de animaciones
-        if (grabbedPizza == null)  // Sin pizza
+        if (grabbedPizza == null)
         {
             if (x == 0 && z == 0)
             {
                 animator.SetBool("Walking", false);
-                animator.SetBool("Carrying", true);  // Animación descanso
+                animator.SetBool("Carrying", true);
             }
             else
             {
-                animator.SetBool("Walking", true);  // Animación caminar
+                animator.SetBool("Walking", true);
                 animator.SetBool("Carrying", false);
             }
         }
-        else  // Con pizza
+        else
         {
             if (x == 0 && z == 0)
             {
                 animator.SetBool("WalkingBox", false);
-                animator.SetBool("CarryingBox", true);  // Animación descanso con caja
+                animator.SetBool("CarryingBox", true);
             }
             else
             {
-                animator.SetBool("WalkingBox", true);  // Animación caminar con caja
+                animator.SetBool("WalkingBox", true);
                 animator.SetBool("CarryingBox", false);
+            }
+        }
+    }
+
+    void CheckNearbyPizza()
+    {
+        float detectionRadius = 3f;  // Radio de Detección Pizza
+        Collider[] colliders = Physics.OverlapSphere(transform.position, detectionRadius);
+
+        nearbyPizza = null;  // Resetear la pizza cercana
+
+        foreach (var collider in colliders)
+        {
+            if (collider.CompareTag("Pizza"))
+            {
+                nearbyPizza = collider.gameObject;
+                break;  // Salir del bucle si encontramos una pizza
             }
         }
     }
@@ -123,64 +138,54 @@ public class Player : MonoBehaviour
         if (nearbyPizza != null)
         {
             grabbedPizza = nearbyPizza;
-            grabbedPizza.GetComponent<Rigidbody>().isKinematic = true;
+            Rigidbody pizzaRb = grabbedPizza.GetComponent<Rigidbody>();
+
+            if (pizzaRb != null)
+            {
+                pizzaRb.isKinematic = true; // Prevenir física
+                pizzaRb.detectCollisions = false; // Desactivar colisiones
+            }
+
             grabbedPizza.transform.position = firePoint.position;
             grabbedPizza.transform.SetParent(firePoint);
         }
     }
 
+
     void DropPizza()
     {
         if (grabbedPizza != null)
         {
-            grabbedPizza.GetComponent<Rigidbody>().isKinematic = false;
+            Rigidbody pizzaRb = grabbedPizza.GetComponent<Rigidbody>();
+
+            if (pizzaRb != null)
+            {
+                pizzaRb.isKinematic = false; // Restaurar la física
+                pizzaRb.detectCollisions = true; // Restaurar colisiones
+            }
+
             grabbedPizza.transform.SetParent(null);
             grabbedPizza = null;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Pizza"))
-        {
-            nearbyPizza = other.gameObject;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Pizza"))
-        {
-            nearbyPizza = null;
-        }
-    }
 
     IEnumerator GhostIntervention()
     {
         while (true)
         {
-            // Espera antes del ataque del fantasma
             yield return new WaitForSeconds(Random.Range(10f, 30f));
-
-            // Instanciar al fantasma cerca del jugador
             ghostInstance = Instantiate(ghostPrefab, GetRandomGhostPosition(), Quaternion.identity);
-            //AudioManager.instance.PlaySound(ghostSound);
-
-            // Invertir controles o clicks
             invertedControls = Random.value > 0.5f;
             reversedClicks = Random.value > 0.5f;
 
-            // Cambiar cámara a una vista aleatoria & spawn fantasma
             Debug.Log("Ghost Attack");
             ChangeRandomCameraView();
             StartCoroutine(MoveGhost());
 
-            // Duración de la intervención luego adioh fantasma
             yield return new WaitForSeconds(10f);
-
             Destroy(ghostInstance);
 
-            // Restaurar los controles y vista isométrica
             invertedControls = false;
             reversedClicks = false;
 
@@ -188,31 +193,28 @@ public class Player : MonoBehaviour
         }
     }
 
-    // El fantasma se mueve aleatoriamente por el mapa durante el ataque
     IEnumerator MoveGhost()
     {
-        while (ghostInstance != null)  
+        while (ghostInstance != null)
         {
             Vector3 targetPosition = GetRandomGhostPosition();
-            float moveDuration = Random.Range(2f, 4f); // Tiempo que tarda en moverse
+            float moveDuration = Random.Range(2f, 4f);
             float elapsedTime = 0f;
 
             Vector3 startPosition = ghostInstance.transform.position;
 
             while (elapsedTime < moveDuration)
             {
-                if (ghostInstance == null) yield break; 
+                if (ghostInstance == null) yield break;
                 ghostInstance.transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / moveDuration);
                 elapsedTime += Time.deltaTime;
                 yield return null;
             }
 
-            yield return new WaitForSeconds(Random.Range(1f, 3f)); // Chill Moment xD
+            yield return new WaitForSeconds(Random.Range(1f, 3f));
         }
     }
 
-
-    // Posición aleatoria Beetlejuice
     Vector3 GetRandomGhostPosition()
     {
         int randomIndex = Random.Range(0, ghostPositions.Length);
@@ -223,14 +225,12 @@ public class Player : MonoBehaviour
     {
         if (newView == firstPersonView)
         {
-            // Hacer que la cámara siga al jugador en primera persona (esto sale erro jaja)
             mainCamera.transform.SetParent(transform);
-            mainCamera.transform.localPosition = firstPersonView.localPosition; 
+            mainCamera.transform.localPosition = firstPersonView.localPosition;
             mainCamera.transform.localRotation = firstPersonView.localRotation;
         }
         else
         {
-            // Desanidar la cámara del Player si no es primera persona
             mainCamera.transform.SetParent(null);
             mainCamera.transform.position = newView.position;
             mainCamera.transform.rotation = newView.rotation;
@@ -239,7 +239,7 @@ public class Player : MonoBehaviour
 
     void ChangeRandomCameraView()
     {
-        int randomView = Random.Range(0, 3);
+        int randomView = Random.Range(0, 4);
         switch (randomView)
         {
             case 0:
