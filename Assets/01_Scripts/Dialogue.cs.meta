@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/01_Scripts/Player.cs.meta
-guid: 141261f55da3c7e47a37a169db8a1c5f
+<<<<<<<< HEAD:Assets/01_Scripts/AudioManager.cs.meta
+guid: 0f55e447efab35348b4246ba47373c70
 ========
-guid: 347d25dc342bdb74ba69cb050e4b46a8
->>>>>>>> antonio:Assets/01_Scripts/StartSC.cs.meta
+guid: 0797b2ba89061eb44a146dd9ac7c5c91
+>>>>>>>> antonio:Assets/01_Scripts/Dialogue.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

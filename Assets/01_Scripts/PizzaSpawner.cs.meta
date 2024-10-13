@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: ac950696ab7e63a40a1903992716d2a8
+<<<<<<<< HEAD:Assets/01_Scripts/PizzaSpawner.cs.meta
+guid: 9c8f175d2e015fa4a908e4d63aad6b23
+========
+guid: 603167db12883bf47a0d32f1694b1848
+>>>>>>>> antonio:Assets/01_Scripts/PlayerPizza.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

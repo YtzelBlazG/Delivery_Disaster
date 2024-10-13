@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 94e623759c0a4f641800ce14c4778cbe
+<<<<<<<< HEAD:Assets/01_Scripts/Npcs.cs.meta
+guid: e7c36db22e32b004a9cc4b2cb2f255a3
+========
+guid: 9ad09f2ea74e52c418f03da9fc1f45e2
+>>>>>>>> antonio:Assets/01_Scripts/MenuInitial.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
