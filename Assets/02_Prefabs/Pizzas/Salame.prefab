@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6086380371388348382}
   - component: {fileID: 6086380371388348381}
   - component: {fileID: 6086380371388347936}
-  - component: {fileID: 2834772260193997546}
+  - component: {fileID: 3243036261532978220}
   m_Layer: 0
-  m_Name: Pizza 3
+  m_Name: Salame
   m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &2834772260193997546
+--- !u!65 &3243036261532978220
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

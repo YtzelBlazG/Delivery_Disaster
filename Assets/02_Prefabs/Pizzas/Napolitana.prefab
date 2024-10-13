@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6086380371388348382}
   - component: {fileID: 6086380371388348381}
   - component: {fileID: 6086380371388347936}
-  - component: {fileID: 6828252995501961002}
+  - component: {fileID: 6033411332358104983}
   m_Layer: 0
-  m_Name: Pizza 2
+  m_Name: Napolitana
   m_TagString: Pizza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &6828252995501961002
+--- !u!65 &6033411332358104983
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
