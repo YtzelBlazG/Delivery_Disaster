@@ -63,6 +63,7 @@
     <Compile Include="Assets\01_Scripts\Npcs.cs" />
     <Compile Include="Assets\01_Scripts\SpawnPoint.cs" />
     <Compile Include="Assets\01_Scripts\PizzaSpawner.cs" />
+    <Compile Include="Assets\01_Scripts\Pizza.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
