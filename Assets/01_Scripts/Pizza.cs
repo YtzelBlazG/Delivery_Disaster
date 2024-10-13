@@ -8,7 +8,7 @@ public class Pizza : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, Random.Range(10f, 15f));
     }
 }
 
