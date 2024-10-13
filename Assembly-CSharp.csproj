@@ -58,7 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\01_Scripts\Player.cs" />
     <Compile Include="Assets\01_Scripts\RotateAndLookAtMouse.cs" />
+    <Compile Include="Assets\01_Scripts\Spawner.cs" />
     <Compile Include="Assets\01_Scripts\AudioManager.cs" />
+    <Compile Include="Assets\01_Scripts\Npcs.cs" />
+    <Compile Include="Assets\01_Scripts\SpawnPoint.cs" />
     <Compile Include="Assets\01_Scripts\PizzaSpawner.cs" />
   </ItemGroup>
   <ItemGroup>
