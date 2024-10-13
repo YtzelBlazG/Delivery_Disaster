@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\",
+  "WorkspaceRootPath": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\assets\\01_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\npcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\npcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|d:\\isi - univalle\\semestre_10\\realidad a\\game jam\\delivery_disaster\\assets\\01_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|d:\\trabajos de la u\\sexto semestre\\realidad virtual\\gamejam2024\\delivery_disaster\\assets\\01_scripts\\pizzaspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\pizzaspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\assets\\01_scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|d:\\isi - univalle\\semestre_10\\realidad a\\game jam\\delivery_disaster\\assets\\01_scripts\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\assets\\01_scripts\\npcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\npcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\pizzaspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\pizzaspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,34 +34,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pizza.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Pizza.cs",
+              "RelativeDocumentMoniker": "Assets\\01_Scripts\\Pizza.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Pizza.cs",
+              "RelativeToolTip": "Assets\\01_Scripts\\Pizza.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T13:50:34.917Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PizzaSpawner.cs",
-              "DocumentMoniker": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\PizzaSpawner.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\PizzaSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\PizzaSpawner.cs",
-              "ToolTip": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\PizzaSpawner.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\PizzaSpawner.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\PizzaSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T18:33:50.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
-              "DocumentMoniker": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\Player.cs",
-              "ToolTip": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\Player.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowPEAAAAsAAAAAAAAAA==",
+              "ViewState": "AQIAALcAAAAAAAAAAAAuwM8AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T21:31:43.686Z",
               "EditorCaption": ""
@@ -66,33 +83,35 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Spawner.cs",
-              "DocumentMoniker": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\Spawner.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Spawner.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\Spawner.cs",
-              "ToolTip": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\Spawner.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Spawner.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\Spawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T09:01:08.387Z"
+              "WhenOpened": "2024-10-13T09:01:08.387Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Npcs.cs",
-              "DocumentMoniker": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\Npcs.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Npcs.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\Npcs.cs",
-              "ToolTip": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\Npcs.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Npcs.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\Npcs.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwKkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T07:28:27.93Z"
+              "WhenOpened": "2024-10-13T07:28:27.93Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "AudioManager.cs",
-              "DocumentMoniker": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\AudioManager.cs",
-              "ToolTip": "D:\\Trabajos de la U\\Sexto Semestre\\Realidad Virtual\\GameJam2024\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\AudioManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
