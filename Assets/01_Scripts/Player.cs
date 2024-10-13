@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [Header("Referencias")]
     public Rigidbody rb;
     public Transform firePoint;
+    public Animator animator;
 
     [Header("Cámaras")]
     public Camera mainCamera;
@@ -87,6 +88,34 @@ public class Player : MonoBehaviour
         }
 
         rb.velocity = Vector3.forward * speed * z + Vector3.right * speed * x;
+
+        // Control de animaciones
+        if (grabbedPizza == null)  // Sin pizza
+        {
+            if (x == 0 && z == 0)
+            {
+                animator.SetBool("Walking", false);
+                animator.SetBool("Carrying", true);  // Animación descanso
+            }
+            else
+            {
+                animator.SetBool("Walking", true);  // Animación caminar
+                animator.SetBool("Carrying", false);
+            }
+        }
+        else  // Con pizza
+        {
+            if (x == 0 && z == 0)
+            {
+                animator.SetBool("WalkingBox", false);
+                animator.SetBool("CarryingBox", true);  // Animación descanso con caja
+            }
+            else
+            {
+                animator.SetBool("WalkingBox", true);  // Animación caminar con caja
+                animator.SetBool("CarryingBox", false);
+            }
+        }
     }
 
     void GrabPizza()

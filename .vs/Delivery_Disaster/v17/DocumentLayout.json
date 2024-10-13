@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\",
+  "WorkspaceRootPath": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|c:\\users\\pc\\documents\\github\\delivery_disaster\\assets\\01_scripts\\npcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\npcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|c:\\users\\pc\\documents\\github\\delivery_disaster\\assets\\01_scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|c:\\users\\pc\\documents\\github\\delivery_disaster\\assets\\01_scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|c:\\users\\pc\\documents\\github\\delivery_disaster\\assets\\01_scripts\\pizzaspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\pizzaspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\assets\\01_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\pizzaspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\pizzaspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|d:\\isi - univalle\\semestre_10\\realidad a\\game jam\\delivery_disaster\\assets\\01_scripts\\npcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\npcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\spawnpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAD53993-F8F8-8DEF-85FD-E52D6D4927A0}|Assembly-CSharp.csproj|solutionrelative:assets\\01_scripts\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,69 +34,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SpawnPoint.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\SpawnPoint.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\SpawnPoint.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\SpawnPoint.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\SpawnPoint.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\SpawnPoint.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\SpawnPoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T09:02:48.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T09:02:48.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\01_Scripts\\Spawner.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Spawner.cs",
+              "RelativeToolTip": "Assets\\01_Scripts\\Spawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T09:01:08.387Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Spawner.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\Spawner.cs",
-              "RelativeDocumentMoniker": "Assets\\01_Scripts\\Spawner.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\Spawner.cs",
-              "RelativeToolTip": "Assets\\01_Scripts\\Spawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T09:01:08.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Npcs.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\Npcs.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Npcs.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\Npcs.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\Npcs.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Npcs.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\Npcs.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAQwLoAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T07:28:27.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\Player.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\Player.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAkwNEAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAAwHMAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T21:31:43.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PizzaSpawner.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\PizzaSpawner.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\PizzaSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\PizzaSpawner.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\PizzaSpawner.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\PizzaSpawner.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\PizzaSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T18:33:50.48Z",
               "EditorCaption": ""
@@ -105,9 +107,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "AudioManager.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
+              "DocumentMoniker": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\01_Scripts\\AudioManager.cs",
-              "ToolTip": "C:\\Users\\PC\\Documents\\GitHub\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
+              "ToolTip": "D:\\ISI - UNIVALLE\\SEMESTRE_10\\Realidad A\\Game Jam\\Delivery_Disaster\\Assets\\01_Scripts\\AudioManager.cs",
               "RelativeToolTip": "Assets\\01_Scripts\\AudioManager.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwCwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
