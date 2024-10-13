@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Npcs : MonoBehaviour
 {
+    private bool hasObject = false; // Para verificar si el NPC ha agarrado una pizza
     public GameObject[] points; // Puntos para NPCs con tag Point
     public float speed = 2f;
-    public float timeToWait = 10f;
+    public float timeToWait = 10f; // Tiempo de espera por defecto
     private Transform target;
     private float timeRemaining;
     private SpawnPoint currentPoint;
@@ -14,11 +15,33 @@ public class Npcs : MonoBehaviour
     private bool goingToExit = false;
     private bool goingToPoint2 = false; // Para saber si va al Point2
 
+    public Transform pizzaParent; // Asigna un transform en el que se "agarra" la pizza
+    private GameObject currentPizza;
+
     void Start()
     {
         points = GameObject.FindGameObjectsWithTag("Point");
         AssignNearestPoint();
         timeRemaining = timeToWait;
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Pizza")) // Verifica si el objeto tiene el tag "Pizza"
+        {
+            Debug.Log("Pizza agarrada: " + collision.gameObject.name); // Mensaje de depuración
+            GrabPizza(collision.gameObject); // Llama a la función para agarrar la pizza
+        }
+    }
+
+    void GrabPizza(GameObject pizza)
+    {
+        currentPizza = pizza; // Guarda la referencia a la pizza
+        pizza.transform.SetParent(pizzaParent); // Cambia el padre del objeto pizza al NPC
+        pizza.transform.localPosition = Vector3.zero; // Ajusta la posición de la pizza a la posición local del NPC
+        pizza.GetComponent<Collider>().enabled = false; // Desactiva el collider de la pizza si no deseas que afecte la física
+        pizza.GetComponent<Rigidbody>().isKinematic = true; // Hace que la pizza no responda a la física
+        hasObject = true; // Marca que el NPC ha agarrado un objeto
     }
 
     void Update()
@@ -29,6 +52,13 @@ public class Npcs : MonoBehaviour
 
             if (isWaiting)
             {
+                // Si el NPC ha agarrado una pizza, espera solo 2 segundos en lugar de 10
+                if (hasObject)
+                {
+                    timeRemaining = Mathf.Min(timeRemaining, 2f); // Establece el tiempo de espera a 2 segundos si tiene pizza
+                }
+
+                Debug.Log("Tiempo de espera restante: " + timeRemaining + " segundos"); // Mostrar el tiempo de espera en consola
                 timeRemaining -= Time.deltaTime;
 
                 if (timeRemaining <= 0f)
