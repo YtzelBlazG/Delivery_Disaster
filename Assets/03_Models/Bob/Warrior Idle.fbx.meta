@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: adfc1f91e5a4ee54ebf39a87d892ebcf
+guid: 4c08804512d7caa44979c5aed5ce823a
 ModelImporter:
   serializedVersion: 20300
   internalIDToNameTable: []
@@ -32,11 +32,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Spin In Place
+      name: mixamo.com
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 120
+      lastFrame: 344
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -119,11 +119,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 4b8c533287e0a394f9de9ebd4dbc6ede, type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 2
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0

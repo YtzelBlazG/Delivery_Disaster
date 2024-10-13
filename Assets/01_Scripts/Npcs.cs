@@ -18,11 +18,17 @@ public class Npcs : MonoBehaviour
     public Transform pizzaParent; // Asigna un transform en el que se "agarra" la pizza
     private GameObject currentPizza;
 
+    // Referencia al Animator para manejar las animaciones
+    private Animator animator;
+
     void Start()
     {
         points = GameObject.FindGameObjectsWithTag("Point");
         AssignNearestPoint();
         timeRemaining = timeToWait;
+
+        // Obtener el componente Animator del NPC
+        animator = GetComponent<Animator>();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -31,6 +37,8 @@ public class Npcs : MonoBehaviour
         {
             Debug.Log("Pizza agarrada: " + collision.gameObject.name); // Mensaje de depuración
             GrabPizza(collision.gameObject); // Llama a la función para agarrar la pizza
+            // Cambia a la animación de estar feliz si recibe la pizza
+            animator.SetTrigger("Happy");
         }
     }
 
@@ -63,6 +71,7 @@ public class Npcs : MonoBehaviour
 
                 if (timeRemaining <= 0f)
                 {
+                    animator.SetTrigger("Sad");
                     if (goingToExit)
                     {
                         AssignToExit(); // Asignar al punto "Exit"
@@ -78,6 +87,9 @@ public class Npcs : MonoBehaviour
         {
             AssignNearestPoint();
         }
+
+        // Si el NPC está en movimiento, activamos la animación de caminar
+        animator.SetBool("Walking", target != null && !isWaiting);
     }
 
     void AssignNearestPoint()
@@ -155,10 +167,13 @@ public class Npcs : MonoBehaviour
         {
             float step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+            transform.LookAt(target);
 
             if (Vector3.Distance(transform.position, target.position) < 0.1f)
             {
                 isWaiting = true;
+                // Cambiar a la animación de pedir orden
+                animator.SetTrigger("Waiting");
 
                 if (target.CompareTag("Middle"))
                 {

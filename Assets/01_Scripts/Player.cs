@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public Rigidbody rb;
     public Transform firePoint;
     public Animator animator;
+    public Animator animatorGhost;
 
     [Header("Cámaras")]
     public Camera mainCamera;
@@ -94,11 +95,15 @@ public class Player : MonoBehaviour
             {
                 animator.SetBool("Walking", false);
                 animator.SetBool("Carrying", true);
+                animator.SetBool("WalkingBox", false);
+                animator.SetBool("CarryingBox", false);
             }
             else
             {
                 animator.SetBool("Walking", true);
                 animator.SetBool("Carrying", false);
+                animator.SetBool("WalkingBox", false);
+                animator.SetBool("CarryingBox", false);
             }
         }
         else
@@ -107,18 +112,22 @@ public class Player : MonoBehaviour
             {
                 animator.SetBool("WalkingBox", false);
                 animator.SetBool("CarryingBox", true);
+                animator.SetBool("Walking", false);
+                animator.SetBool("Carrying", false);
             }
             else
             {
                 animator.SetBool("WalkingBox", true);
                 animator.SetBool("CarryingBox", false);
+                animator.SetBool("Walking", false);
+                animator.SetBool("Carrying", false);
             }
         }
     }
 
     void CheckNearbyPizza()
     {
-        float detectionRadius = 3f;  // Radio de Detección Pizza
+        float detectionRadius = 1.5f;  // Radio de Detección Pizza
         Collider[] colliders = Physics.OverlapSphere(transform.position, detectionRadius);
 
         nearbyPizza = null;  // Resetear la pizza cercana
@@ -176,6 +185,7 @@ public class Player : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(10f, 30f));
             ghostInstance = Instantiate(ghostPrefab, GetRandomGhostPosition(), Quaternion.identity);
+            animatorGhost = ghostInstance.GetComponent<Animator>();
             invertedControls = Random.value > 0.5f;
             reversedClicks = Random.value > 0.5f;
 
@@ -195,6 +205,7 @@ public class Player : MonoBehaviour
 
     IEnumerator MoveGhost()
     {
+        animatorGhost.SetInteger("anim", Random.Range(1, 4));
         while (ghostInstance != null)
         {
             Vector3 targetPosition = GetRandomGhostPosition();
